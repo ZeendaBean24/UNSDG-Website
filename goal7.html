@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;700&display=swap" rel="stylesheet">
+    <title>Goal 7</title>
+    <script src="https://cdn.plot.ly/plotly-2.20.0.min.js" charset="utf-8"></script>
+</head>
+<body> 
+    <div class="topnav">
+        <a href="index.html" style="margin-left:35.5%;">Home</a>
+        <a class="active" href="goal7.html">Goal 7</a> 
+        <a href="goal13.html">Goal 13</a>
+        <a href="connections.html">Connections</a>
+    </div>
+    <div class="introduction13">
+        <!-- Is it possible to go beyond the maximum size of an image -->
+        <!-- Is it also possible to center something vertically like this image without manually doing so -->
+        <h1 style="margin-bottom: 40px">Goal 7 - Affordable & Clean Energy</h1>
+        <img class="unsdglogo" src="unsdg7.png" alt="13climateaction" style="margin-bottom:185px">
+    </div>
+    <div class="section-divider">
+        <div class="divider-line"></div>
+        <div class="divider-text"> ⇊ Learn More about Goal 7! ⇊ </div>
+        <div class="divider-line"></div>
+    </div>
+    <div class="cardflip"> 
+        <div class="inlinechild" style="margin-left: 40px;">
+            <div class="maincontainer">
+                <div id="thecard" onclick="myFlipFunction()">
+                    <!-- add a dropdown show the progress for each year -->
+                  <div class="thefront">
+                    <h1>Targets (Click to Flip)</h1>
+                    <h2>Target 7.1</h2>
+                    <p>By 2030, ensure universal access to affordable, reliable and modern energy services</p>
+                    <h2>Target 7.2</h2>
+                    <p>By 2030, increase substantially the share of renewable energy in the global energy mix</p>
+                    <h2>Target 7.3</h2>
+                    <p>By 2030, double the global rate of improvement in energy efficiency</p>
+                    <h2>Target 7.a</h2>
+                    <p>By 2030, enhance international cooperation to facilitate access to clean energy research and technology, including renewable energy, energy efficiency and advanced and cleaner fossil-fuel technology, and promote investment in energy infrastructure and clean energy technology</p>
+                    <h2>Target 7.b</h2>
+                    <p>By 2030, expand infrastructure and upgrade technology for supplying modern and sustainable energy services for all in developing countries, in particular least developed countries, small island developing States, and land-locked developing countries, in accordance with their respective programmes of support</p>
+                  </div>
+                  <div style="font-size: 10.5px;" class="theback">
+                    <h1>Progress (2023)</h1>
+                    <p><strong>Target 7.1: </strong>The global population with access to electricity has increased from 87% in 2015 to 91% in 2021. The pace of electrification has rebounded between 2019 and 2021. However, the annual access growth of 0.6 percentage points in the recent period is lower than the 0.8 percentage points in 2015–19. As a result, 675 million people, majorly located in LDCs and sub-Saharan Africa, still lacked access in 2021. Also in 2021, 71% of the global population had access to clean cooking fuels and technologies, up from 64% in 2015. In seven (all located in sub-Saharan Africa) of the 20 countries with the largest deficits, fewer than 10% of the population had access to clean fuels and technologies. The growing access deficit in sub-Saharan Africa, if not reversed, could dampen or undermine increasing trends in global access.</p>
+                    <p><strong>Target 7.2: </strong>The share of renewable sources in total final energy consumption amounted to 19.1% globally in 2020, or 2.4 percentage points higher than in 2015. Part of this progression is due to lower final energy demand in 2020, as the pandemic disrupted social and economic activities worldwide. The electricity sector shows the largest share of renewables in total final energy consumption (28.2% in 2020) and has driven most of the growth in renewable energy use, while the heat and transport sectors have seen limited progress over the past decade.</p>
+                    <p><strong>Target 7.3: </strong>The rate of improvement in primary energy intensity, which had already slowed in recent years, dropped to 0.6% in 2020. This makes it the worst year for energy intensity improvement since the global financial crisis. Annual improvement through 2030 must now average 3.4% to meet the target of SDG 7.3. This slowdown was influenced by a shift in the economic structure during Covid towards more energy-intensive industrial production, combined with only modest rates of technical efficiency improvements, in the context of low energy prices.</p>
+                    <p><strong>Target 7.a: </strong>International public financial flows in support of clean energy in developing countries have a decreasing trend that started before the COVID-19 pandemic and continued through 2021. In 2021, they amounted to $10.8 billion— an 11% drop from 2020. This was 35% less than the 2010–19 decade-long average, and less than half the 2017 peak of $26.4 billion.</p>
+                    <p><strong>Target 7.b: </strong>In 2021, there was a record-breaking installation of 268 Watts per capita of renewable capacity in developing countries, representing a year-on-year growth rate of 9.8%. However, even with this positive and accelerating growth, developing countries are not on track to meet SDG7 by 2030. Moreover, the positive global and regional trends hide the fact that the countries that are most in need of support are being left behind, even among developing countries.</p>
+                  </div>
+                </div>
+            </div>  
+        </div>
+        <div class="inlinechild" style="max-width: 800px; margin-left: 40px; margin-top: 40px; vertical-align: top; padding-right: 40px;">
+            <u><h1 style="margin-bottom: 15px;">Why is this goal important?</h1></u>
+            <p style="margin-bottom: 60px">Access to electricity and clean cooking fuels has improved in many parts of the world, but 675 million people are yet to be connected to the grids and 2.3 billion are still cooking with unsafe and polluting fuels. The war in Ukraine and global economic uncertainty continue to cause significant volatility in energy prices, leading some countries to raise investments in renewables and others to increase reliance on coal, putting the green transition at risk. If the current pace continues, about 660 million people will still lack access to electricity and close to 2 billion people will continue to rely on polluting fuels and technologies for cooking by 2030. To ensure access to energy for all by 2030, we must accelerate electrification, increase investments in renewable energy sources and invest in improving electricity grids.</p>
+            <div style="margin-left: 0">
+                <img src="hydrowindsolar.jpeg" alt="HydroWindSolarEnergy" style="border: 5px solid black">
+                <p style="font-size: 10px; margin-top: 10px;"><em><strong>Source: </strong><a class="link" href="https://www.anl.gov/article/utility-player-how-hydropower-can-help-get-more-wind-and-solar-on-the-grid">https://www.anl.gov/article/utility-player-how-hydropower-can-help-get-more-wind-and-solar-on-the-grid</a></p></em>
+            </div>
+        </div> 
+    </div>
+    <script>
+        function myFlipFunction() {
+           var myElement = document.getElementById("thecard");
+           myElement.classList.toggle("flipper");
+        }
+    </script>
+    <div class="section-divider">
+        <div class="divider-line"></div>
+        <div class="divider-text"> ⇊ Graphs ⇊</div>
+        <div class="divider-line"></div>
+    </div>
+    <div id='graph5' style="width: 1300px; height: 650px; margin-left: auto; margin-right: auto;">
+        <script> // Source - https://www.iea.org/reports/world-energy-balances-overview/world
+            var data = [{ //todo: ADD ANNOTATION SOURCES FOR EACH OF THE GRAPHS
+                values: [26.1, 44.3, 16.2, 0.5, 1.9, 10.8, 0.2],
+                labels: ['Coal', 'Oil', 'Natural Gas', 'Nuclear', 'Hydro', 'Biofuels', 'Other Renewables'],
+                domain: {column: 0},
+                name: '1971 - 230 EJ',
+                hoverinfo: 'label+percent+name',
+                hole: .4,
+                type: 'pie'
+            },
+            {
+                values: [26.8, 30.9, 23.2, 5.0, 2.5, 9.4, 2.2],
+                labels: ['Coal', 'Oil', 'Natural Gas', 'Nuclear', 'Hydro', 'Biofuels', 'Other Renewables'],
+                domain: {column: 1},
+                name: '2019 - 606 EJ',
+                hoverinfo: 'label+percent+name',
+                hole: .4,
+                type: 'pie'
+            }];
+
+            var layout = {
+                title: 'Total Primary Energy Supply by Fuel Comparison',
+                annotations: [
+                    {font: {
+                        size: 20
+                    },
+                        showarrow: false,
+                        text: '1971',
+                        x: 0.21,
+                        y: 0.5
+                    },
+                    {font: {
+                        size: 20
+                    },
+                        showarrow: false,
+                        text: '2019',
+                        x: 0.79,
+                        y: 0.5
+                    }
+                ],
+                    showlegend: true,
+                    grid: {rows: 1, columns: 2},
+                annotations: [
+                    {
+                        xref: 'paper',
+                        yref: 'paper',
+                        x: 0.55,
+                        y: -0.12,
+                        xanchor: 'center',
+                        yanchor: 'top',
+                        text: 'Source: https://www.iea.org/reports/world-energy-balances-overview/world',
+                        showarrow: false,
+                        font: {
+                            family: 'Arial',
+                            size: 12,
+                            color: 'rgb(150,150,150)'
+                        }
+                    }
+                ],
+                margin: {t: 50, b: 100}
+                }
+
+            Plotly.newPlot('graph5', data, layout);
+        </script>
+    </div>
+    <div class="section-divider">
+        <div class="divider-line"></div>
+        <div class="divider-text"> 〇 </div>
+        <div class="divider-line"></div>
+    </div>
+    <div id="graph6" style="width:1300px;height: 700px; margin-left: auto; margin-right: auto;">
+        <script> // Source - https://www.iea.org/reports/world-energy-balances-overview/world
+            // todo: learn to automatically read .csv files
+            // todo: to refine, look at the line chart documentation for plotly.js, LAST EXAMPLE
+            // todo: add hover template and text instead of onling putting (%) in the series
+            var data = [
+                {
+                //coal 
+                x: [1971, 1972, 1973, 1974, 1975, 1976, 1977, 1978, 1979, 1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019],
+                y: [39.98, 38.35, 38.18, 36.48, 36.48, 37.26, 36.93, 35.99, 36.73, 37.85, 37.59, 38.19, 38.53, 38.05, 38.83, 38.74, 39.24, 38.9, 38.46, 37.4, 37.45, 37.79, 37.7, 37.86, 37.68, 38.29, 38.34, 38.09, 37.9, 38.86, 38.68, 38.98, 40.08, 39.61, 40.06, 40.7, 41.32, 40.84, 40.21, 40.28, 41.2, 40.44, 41.14, 40.98, 39.28, 38.38, 38.68, 38.16, 36.81],
+                mode: "lines",
+                name: "Coal",
+                line: {
+                    width: 6
+                },
+                type: 'scatter'
+                }, 
+                {
+                x: [1971, 1972, 1973, 1974, 1975, 1976, 1977, 1978, 1979, 1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019],
+                y: [23.6, 22.89, 21.56, 23.26, 22.84, 21.21, 20.94, 21.45, 21.66, 21.43, 21.52, 21.87, 21.92, 21.48, 20.97, 20.75, 19.91, 19.73, 19.25, 19.68, 19.58, 19.55, 20.13, 19.9, 20.21, 19.87, 19.75, 19.4, 19.03, 18.68, 18.25, 18.19, 17.77, 18.19, 18.38, 18.48, 18.23, 18.88, 19.7, 19.91, 20.27, 21.21, 22.01, 22.51, 23.1, 24.04, 24.76, 25.57, 26.49],
+                mode: "lines",
+                name: "Renewables",
+                line: {
+                    width: 5
+                },
+                type: 'scatter'
+                }, 
+                {
+                x: [1971, 1972, 1973, 1974, 1975, 1976, 1977, 1978, 1979, 1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019],
+                y: [13.23, 12.94, 12.1, 12.43, 12.36, 11.85, 11.73, 11.55, 11.99, 12.05, 12.14, 12.32, 12.12, 12.87, 12.8, 12.63, 13.04, 12.81, 13.9, 14.76, 14.66, 14.65, 14.75, 14.95, 15.23, 15.26, 16.05, 16.63, 17.53, 17.96, 18.76, 19.31, 19.57, 20.05, 20.25, 20.63, 21.31, 21.63, 21.91, 22.5, 22.14, 22.52, 21.61, 21.51, 22.8, 23.32, 22.99, 23.14, 23.56],
+                mode: "lines",
+                name: "Natural Gas",
+                line: {
+                    width: 4
+                },
+                type: 'scatter'
+                }, 
+                {
+                x: [1971, 1972, 1973, 1974, 1975, 1976, 1977, 1978, 1979, 1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019],
+                y: [2.11, 2.68, 3.31, 4.34, 5.88, 6.31, 7.35, 8.14, 8.08, 8.61, 9.96, 10.66, 11.63, 13.36, 15.24, 15.87, 16.46, 17.16, 16.77, 16.99, 17.39, 17.37, 17.51, 17.49, 17.6, 17.68, 17.14, 17.07, 17.18, 16.79, 16.96, 16.47, 15.73, 15.62, 15.14, 14.69, 13.71, 13.52, 13.38, 12.8, 11.63, 10.82, 10.59, 10.57, 10.59, 10.46, 10.26, 10.19, 10.36],
+                mode: "lines",
+                name: "Nuclear",
+                line: {
+                    width: 3
+                },
+                type: 'scatter'
+                },
+                {
+                x: [1971, 1972, 1973, 1974, 1975, 1976, 1977, 1978, 1979, 1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019],
+                y: [21.08, 23.15, 24.85, 23.5, 22.43, 23.37, 23.05, 22.88, 21.54, 20.06, 18.79, 16.98, 15.79, 14.24, 12.16, 12.01, 11.35, 11.4, 11.62, 11.18, 10.92, 10.64, 9.91, 9.8, 9.28, 8.9, 8.72, 8.82, 8.36, 7.7, 7.34, 7.05, 6.84, 6.53, 6.17, 5.49, 5.43, 5.12, 4.79, 4.49, 4.75, 5.0, 4.64, 4.41, 4.22, 3.79, 3.29, 2.93, 2.77],
+                mode: "lines",
+                name: "Oil",
+                line: {
+                    width: 2
+                },
+                type: 'scatter'
+                }, 
+                {
+                x: [1971, 1972, 1973, 1974, 1975, 1976, 1977, 1978, 1979, 1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019],
+                y: [0.00000, 0.00000, 0.00000, 0.00000, 0.00000, 0.00000, 0.00000, 0.00000, 0.00000, 0.00000, 0.00000, 0.00000, 0.00000, 0.00000, 0.00000, 0.00000, 0.00000, 0.00000, 0.00000, 0.00000, 0.00000, 0.00000, 0.00000, 0.00000, 0.00000, 0.00000, 0.00000, 0.00000, 0.00000, 0.01000, 0.01000, 0.01000, 0.01000, 0.01000, 0.01000, 0.01000, 0.01000, 0.01000, 0.01000, 0.01000, 0.01000, 0.01000, 0.02000, 0.02000, 0.02000, 0.01000, 0.02000, 0.01000, 0.01000],
+                mode: "lines",
+                name: "Other",
+                line: {
+                    width: 1
+                },
+                type: 'scatter'
+                }
+            ];
+            var layout = {
+                title:'World Electricity Generation Mix',
+                xaxis: {
+                    title: 'Year'
+                },
+                yaxis: {
+                    title: 'Fuel (%)',
+                },
+                annotations: [
+                    {
+                        xref: 'paper',
+                        yref: 'paper',
+                        x: 0.5,
+                        y: -0.12,
+                        xanchor: 'center',
+                        yanchor: 'top',
+                        text: 'Source: https://www.iea.org/reports/world-energy-balances-overview/world',
+                        showarrow: false,
+                        font: {
+                            family: 'Arial',
+                            size: 12,
+                            color: 'rgb(150,150,150)'
+                        }
+                    }
+                ],
+                margin: {t: 50, b: 100}
+            };
+
+            Plotly.newPlot('graph6', data, layout);
+
+        </script>
+    </div>
+    <div class="section-divider">
+        <div class="divider-line"></div>
+        <div class="divider-text"> 〇 </div>
+        <div class="divider-line"></div>
+    </div>
+    <div id="graph7" style="width:1300px;height: 700px; margin-left: auto; margin-right: auto;">
+        <script> // Source - https://ourworldindata.org/fossil-fuels
+            //todo: format so that the y axis already has the "TWh" instead of only having it on the axis
+            //todo: learn how to format individual points so that the data point's name isn't actually the data (its the sum) refer to the link above for example 
+            //todo: this is inefficient! how to show a hovertext without actually having to use the data points/having a custom name for each data point
+            // Gas Base - [6303.799, 6868.7944, 7374.0396, 8044.3315, 8833.418, 9614.792, 10293.2, 10861.724, 11377.838, 11659.865, 11659.741, 12354.144, 12759.843, 13293.952, 14118.032, 14236.961, 14395.874, 14469.735, 14703.833, 15902.681, 16262.222, 16421.111, 17281.896, 18088.846, 18867.309, 19481.125, 19972.84, 20063.484, 20265.484, 20389.615, 21104.494, 22159.256, 22030.393, 22434, 23071.904, 23994.258, 24316.834, 25030.143, 25729.59, 26721.102, 27438.037, 28161.105, 29315.39, 30021.318, 29401.191, 31588.863, 32340.18, 33194.035, 33729.723, 33944.273, 34768.676, 35560.773, 36529.223, 38356.3, 39062.945, 38455.727, 40374.605]
+            // Coal Base - [16140.179, 16324.094, 16060.81, 16301.146, 16798.736, 17058.607, 16965.777, 17158.637, 17667.85, 17682.05, 18024.537, 18688.484, 19241.3, 19457.904, 20363.54, 20857.61, 21149.68, 21385.451, 22046.346, 23001.08, 23987.828, 24258.033, 25212.426, 25967.129, 26215.676, 25904.469, 25654.252, 25556.594, 25685.594, 25784.777, 25963.682, 26582.123, 26536.688, 26366.365, 26479.496, 27427.523, 27860.152, 28955.104, 31499.232, 33673.01, 36169.06, 38069.035, 40228.418, 40773.582, 40175.36, 41996.387, 44017.297, 44184.375, 44842.617, 45161.207, 44054.44, 43504.164, 43751.676, 44315.875, 43699.887, 41963.965, 44473.195]
+            // Oil Base - [17989.604, 19341.146, 20732.137, 22488.332, 24353, 26505.184, 27994.797, 30112.264, 32534.807, 32078.18, 31715.77, 33752.465, 34928.137, 36509.918, 37064.566, 35514.42, 34251.57, 33185.27, 32937.605, 33680.055, 33660.1, 34700.836, 35393.543, 36552.59, 37156.836, 37608.02, 37610.64, 38151.848, 37960.613, 38793.508, 39442.176, 40314.297, 41413.246, 41644.414, 42370.094, 42880.926, 43255.684, 43608.863, 44580.65, 46270.656, 46672.656, 47172.61, 47758.875, 47338.688, 46371.566, 47895.074, 48307.656, 49010.707, 49520.156, 49832.44, 50796.26, 51760.777, 52515.543, 53250.62, 53368.63, 48380.71, 51170.473]
+            var data = [
+            {
+                x: [1965, 1966, 1967, 1968, 1969, 1970, 1971, 1972, 1973, 1974, 1975, 1976, 1977, 1978, 1979, 1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019],
+                y: [40433.582, 42534.0344, 44166.986, 46833.8095, 49985.154, 53178.583, 55253.774, 58132.625, 61580.495, 61420.095, 61400.048, 64795.093, 66929.28, 69261.774, 71546.138, 70608.991, 69797.124, 69040.456, 69687.784, 72583.816, 73910.15, 75379.98, 77887.865, 80608.565, 82239.821, 82993.614, 83237.732, 83771.926, 83911.691, 84967.9, 86510.352, 89055.676, 89980.327, 90444.779, 91921.494, 94302.707, 95432.67, 97594.11, 101809.472, 106664.768, 110279.753, 113402.75, 117302.683, 118133.588, 115948.117, 121480.324, 124665.133, 126389.117, 128092.496, 128937.92, 129619.376, 130825.714, 132796.442, 135922.795, 136131.462, 128800.402, 136018.273],
+                name: "Oil",
+                fill: 'tonexty',
+                fillcolor: 'rgba(77, 232, 139, 0.5)',
+                line: {color: 'rgba(87, 194, 247, 1)'},
+                type: 'scatter',
+                showlegend: false,
+                hoverinfo: 'none'
+            }, 
+            {
+                x: [1965, 1966, 1967, 1968, 1969, 1970, 1971, 1972, 1973, 1974, 1975, 1976, 1977, 1978, 1979, 1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019],
+                y: [6303.799, 6868.7944, 7374.0396, 8044.3315, 8833.418, 9614.792, 10293.2, 10861.724, 11377.838, 11659.865, 11659.741, 12354.144, 12759.843, 13293.952, 14118.032, 14236.961, 14395.874, 14469.735, 14703.833, 15902.681, 16262.222, 16421.111, 17281.896, 18088.846, 18867.309, 19481.125, 19972.84, 20063.484, 20265.484, 20389.615, 21104.494, 22159.256, 22030.393, 22434, 23071.904, 23994.258, 24316.834, 25030.143, 25729.59, 26721.102, 27438.037, 28161.105, 29315.39, 30021.318, 29401.191, 31588.863, 32340.18, 33194.035, 33729.723, 33944.273, 34768.676, 35560.773, 36529.223, 38356.3, 39062.945, 38455.727, 40374.605],
+                name: "Gas",
+                fill: 'tonexty',
+                fillcolor: 'rgba(87, 194, 247, 0.5)',
+                line: {color: 'rgba(77, 232, 139, 1)'},
+                type: 'scatter',
+                showlegend: false,
+                hoverinfo: 'none'
+                
+            },
+            {
+                x: [1965, 1966, 1967, 1968, 1969, 1970, 1971, 1972, 1973, 1974, 1975, 1976, 1977, 1978, 1979, 1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019],
+                y: [22443.978, 23192.8884, 23434.8496, 24345.4775, 25632.154, 26673.399, 27258.977, 28020.361, 29045.688, 29341.915, 29684.278, 31042.628, 32001.143, 32751.856, 34481.572, 35094.571, 35545.554, 35855.186, 36750.179, 38903.761, 40250.05, 40679.144, 42494.322, 44055.975, 45082.985, 45385.594, 45627.092, 45620.078, 45951.078, 46174.392, 47068.176, 48741.379, 48567.081, 48800.365, 49551.4, 51421.781, 52176.986, 53985.247, 57228.822, 60394.112, 63607.097, 66230.14, 69543.808, 70794.9, 69576.551, 73585.25, 76357.477, 77378.41, 78572.34, 79105.48, 78823.116, 79064.937, 80280.899, 82672.175, 82762.832, 80419.692, 84847.8],
+                name: "Coal",
+                fill: 'tonexty',
+                fillcolor: 'rgba(247, 97, 87, 0.5)',
+                line: {color: 'rgba(247, 97, 87, 1)'},
+                type: 'scatter',
+                showlegend: false,
+                hoverinfo: 'none'
+            }, 
+            {
+                x: [1965, 1966, 1967, 1968, 1969, 1970, 1971, 1972, 1973, 1974, 1975, 1976, 1977, 1978, 1979, 1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019],
+                y: [6303.799, 6868.7944, 7374.0396, 8044.3315, 8833.418, 9614.792, 10293.2, 10861.724, 11377.838, 11659.865, 11659.741, 12354.144, 12759.843, 13293.952, 14118.032, 14236.961, 14395.874, 14469.735, 14703.833, 15902.681, 16262.222, 16421.111, 17281.896, 18088.846, 18867.309, 19481.125, 19972.84, 20063.484, 20265.484, 20389.615, 21104.494, 22159.256, 22030.393, 22434, 23071.904, 23994.258, 24316.834, 25030.143, 25729.59, 26721.102, 27438.037, 28161.105, 29315.39, 30021.318, 29401.191, 31588.863, 32340.18, 33194.035, 33729.723, 33944.273, 34768.676, 35560.773, 36529.223, 38356.3, 39062.945, 38455.727, 40374.605],
+                name: "Gas",
+                line: {color: 'rgba(77, 232, 139, 1)'},
+                type: 'scatter',
+                showlegend: true,
+                hoverinfo: 'none'
+                
+            },
+            {
+                x: [1965, 1966, 1967, 1968, 1969, 1970, 1971, 1972, 1973, 1974, 1975, 1976, 1977, 1978, 1979, 1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019],
+                y: [22443.978, 23192.8884, 23434.8496, 24345.4775, 25632.154, 26673.399, 27258.977, 28020.361, 29045.688, 29341.915, 29684.278, 31042.628, 32001.143, 32751.856, 34481.572, 35094.571, 35545.554, 35855.186, 36750.179, 38903.761, 40250.05, 40679.144, 42494.322, 44055.975, 45082.985, 45385.594, 45627.092, 45620.078, 45951.078, 46174.392, 47068.176, 48741.379, 48567.081, 48800.365, 49551.4, 51421.781, 52176.986, 53985.247, 57228.822, 60394.112, 63607.097, 66230.14, 69543.808, 70794.9, 69576.551, 73585.25, 76357.477, 77378.41, 78572.34, 79105.48, 78823.116, 79064.937, 80280.899, 82672.175, 82762.832, 80419.692, 84847.8],
+                name: "Coal",
+                line: {color: 'rgba(247, 97, 87, 1)'},
+                type: 'scatter',
+                showlegend: true,
+                hoverinfo: 'none'
+            },
+            {
+                x: [1965, 1966, 1967, 1968, 1969, 1970, 1971, 1972, 1973, 1974, 1975, 1976, 1977, 1978, 1979, 1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019],
+                y: [40433.582, 42534.0344, 44166.986, 46833.8095, 49985.154, 53178.583, 55253.774, 58132.625, 61580.495, 61420.095, 61400.048, 64795.093, 66929.28, 69261.774, 71546.138, 70608.991, 69797.124, 69040.456, 69687.784, 72583.816, 73910.15, 75379.98, 77887.865, 80608.565, 82239.821, 82993.614, 83237.732, 83771.926, 83911.691, 84967.9, 86510.352, 89055.676, 89980.327, 90444.779, 91921.494, 94302.707, 95432.67, 97594.11, 101809.472, 106664.768, 110279.753, 113402.75, 117302.683, 118133.588, 115948.117, 121480.324, 124665.133, 126389.117, 128092.496, 128937.92, 129619.376, 130825.714, 132796.442, 135922.795, 136131.462, 128800.402, 136018.273],
+                name: "Oil",
+                line: {color: 'rgba(87, 194, 247, 1)'},
+                type: 'scatter',
+                showlegend: true,
+                hoverinfo: 'none'
+            }, 
+            {
+                x: [1965, 1966, 1967, 1968, 1969, 1970, 1971, 1972, 1973, 1974, 1975, 1976, 1977, 1978, 1979, 1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019],
+                y: [40433.582, 42534.0344, 44166.986, 46833.8095, 49985.154, 53178.583, 55253.774, 58132.625, 61580.495, 61420.095, 61400.048, 64795.093, 66929.28, 69261.774, 71546.138, 70608.991, 69797.124, 69040.456, 69687.784, 72583.816, 73910.15, 75379.98, 77887.865, 80608.565, 82239.821, 82993.614, 83237.732, 83771.926, 83911.691, 84967.9, 86510.352, 89055.676, 89980.327, 90444.779, 91921.494, 94302.707, 95432.67, 97594.11, 101809.472, 106664.768, 110279.753, 113402.75, 117302.683, 118133.588, 115948.117, 121480.324, 124665.133, 126389.117, 128092.496, 128937.92, 129619.376, 130825.714, 132796.442, 135922.795, 136131.462, 128800.402, 136018.273],
+                name: "Total",
+                line: {color: 'rgba(87, 194, 247, 1)'},
+                type: 'scatter',
+                showlegend: false,
+            }, 
+        ]
+            var layout = {
+                title:'Global Fossil Fuel Consumption',
+                xaxis: {
+                    title: 'Year'
+                },
+                yaxis: {
+                    title: 'Consumption (Terawatt-Hours)',
+                },
+                annotations: [
+                    {
+                        xref: 'paper',
+                        yref: 'paper',
+                        x: 0.5,
+                        y: -0.12,
+                        xanchor: 'center',
+                        yanchor: 'top',
+                        text: 'Source: https://ourworldindata.org/fossil-fuels',
+                        showarrow: false,
+                        font: {
+                            family: 'Arial',
+                            size: 12,
+                            color: 'rgb(150,150,150)'
+                        }
+                    }
+                ],
+                margin: {t: 50, b: 100}
+            }
+            
+            Plotly.newPlot('graph7', data, layout);
+        </script>
+    </div>
+    <div class="section-divider">
+        <div class="divider-line"></div>
+        <div class="divider-text"> 〇 </div>
+        <div class="divider-line"></div>
+    </div>
+    <div id="graph8" style="width:1300px;height: 700px; margin-left: auto; margin-right: auto;">
+        <script> // source: https://www.iea.org/reports/electric-vehicles 
+            //todo: automatically reorder the order of the countries instead of manually copy pasting them one on top of another
+            var data = [
+            {
+            x: [2016, 2017, 2018, 2019, 2020, 2021],
+            y: [31000, 48000, 115000, 107000, 257000, 468000],
+            name: 'Others',
+            type: 'bar',
+            marker: {
+                color: 'rgba(230, 23, 223, 0.5)'
+            }
+            },
+            {
+            x: [2016, 2017, 2018, 2019, 2020, 2021],
+            y: [92000, 139000, 202000, 363000, 746000, 1231000],
+            name: 'Europe',
+            type: 'bar',
+            marker: {
+                color: 'rgba(12, 110, 27, 0.5)'
+            }
+            },
+            {
+            x: [2016, 2017, 2018, 2019, 2020, 2021],
+            y: [87000, 104000, 239000, 242000, 231000, 466000],
+            name: 'United States',
+            type: 'bar',
+            marker: {
+                color: 'rgba(5, 121, 245, 0.5)'
+            }
+            },
+            {
+            x: [2016, 2017, 2018, 2019, 2020, 2021],
+            y: [257000, 468000, 816000, 834000, 931000, 2734000],
+            name: 'China',
+            type: 'bar',
+            marker: {
+                color: 'rgba(245, 5, 5, 0.5)'
+            }
+            }
+        ]
+
+            var layout = {
+                barmode: 'stack',
+                title: "BEV Electric Car Registrations and Sales Share Comparison",
+                xaxis: {
+                    title: 'Year'
+                },
+                yaxis: {
+                    title: 'Number of BEV Registrations',
+                },
+                annotations: [
+                    {
+                        xref: 'paper',
+                        yref: 'paper',
+                        x: 0.5,
+                        y: -0.12,
+                        xanchor: 'center',
+                        yanchor: 'top',
+                        text: 'Source: https://www.iea.org/reports/electric-vehicles ',
+                        showarrow: false,
+                        font: {
+                            family: 'Arial',
+                            size: 12,
+                            color: 'rgb(150,150,150)'
+                        }
+                    }
+                ],
+                margin: {t: 50, b: 100}
+            };
+
+            Plotly.newPlot('graph8', data, layout);
+        </script>
+    </div>
+    <hr class="bottom-line">
+    <footer>
+      <p>Copyright © 2023 Zeen Liu | <a class="link" href="https://www.ucc.on.ca/">Upper Canada College</a> - All Rights Reserved</p>
+    </footer>
+</body>
+</html>

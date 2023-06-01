@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Connections</title>
+</head>
+<body>
+    <div class="topnav">
+        <a href="index.html" style="margin-left:35.5%;">Home</a>
+        <a href="goal7.html">Goal 7</a> 
+        <a href="goal13.html">Goal 13</a>
+        <a class="active" href="connections.html">Connections</a>
+    </div>
+    <!-- again, find a way, either using margin, left or auto margin to center all elements instead of manual input -->
+    <div style="margin-left: 400px; margin-top: 16%; margin-bottom: 20%">
+        <h1 style="margin-top: 40px; margin-bottom: 40px">Climate change could be irreversible in: </h1>
+            <div id="clockdiv" style="margin-left: 60px">
+                <div>
+                    <span class="days" id="day">0000</span>
+                    <div class="smalltext">Days</div>
+                </div>
+                <div>
+                    <span class="hours" id="hour">00</span>
+                    <div class="smalltext">Hours</div>
+                </div>
+                <div>
+                    <span class="minutes" id="minute">00</span>
+                    <div class="smalltext">Minutes</div>
+                </div>
+                <div>
+                    <span class="seconds" id="second">00</span>
+                    <div class="smalltext">Seconds</div>
+                </div>
+            </div>
+            
+            <script>
+                var deadline = new Date("dec 31, 2029 11:59:59").getTime();
+                
+                var x = setInterval(function() {
+                
+                var now = new Date().getTime();
+                var t = deadline - now;
+                var days = Math.floor(t / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60));
+                var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((t % (1000 * 60)) / 1000);
+                document.getElementById("day").innerHTML =days ;
+                document.getElementById("hour").innerHTML =hours;
+                document.getElementById("minute").innerHTML = minutes; 
+                document.getElementById("second").innerHTML =seconds; 
+                }, 1000);
+            </script>
+    </div>
+    <div class="section-divider">
+        <div class="divider-line"></div>
+        <div class="divider-text"> ⇊ Call To Action ⇊ </div>
+        <div class="divider-line"></div>
+    </div>
+    <!-- there is the opportunity to add other types of trackers here -->
+    <div class="clock"> 
+        <!-- how to easily vertically align this div non manually -->
+        <div class="inlinechild" style="text-align: right; margin-left: 100px; vertical-align: top;">
+            <!-- how to make this fixed and not have the box move all the time I guess just create another box? -->
+            <h1>We are running out of time...</h1>
+            <p id="time">00:00:00 00</p>
+            <p id="date"></p>
+            <h1 style="margin-top: 210px; font-size: 26px;">...and it is up to us to do the right thing.</h1><br>
+            <img src="globalwarming.jpeg" alt="GlobalWarming" style="max-width: 420px; border: 5px solid black">
+        </div>
+        <div class="inlinechild" style="text-align: left; max-width: 650px; margin-left: 40px;">
+            <h1>Global Warming</h1><br>
+            <p>At our current global pace of carbon emissions, the world will burn through its remaining “carbon budget” by 2030. Doing so would put the long-term goal of keeping global warming to 1.5 degrees Celsius (2.7 degrees Fahrenheit) irrevocably out of reach. Climate change could be irreversible as soon as 2030 if appropriate measures are not taken correctly and promptly.</p><br>
+            <h3>Why the goal of 1.5 degrees Celsius?</h3><br>
+            <p>Keeping warming below this threshold would help save the world’s coral reefs and preserve the Arctic’s protective sea ice layer. It could also stave off dramatic sea level rise by avoiding further destabilization in Antarctica and Greenland.</p><br>
+            <h3>So where do we stand now?</h3><br>
+            <p>The world has already warmed more than 1.1 degrees Celsius (2 degrees Fahrenheit) above preindustrial temperatures. We charted over 1,200 different scenarios for climate change over the coming century; of those, 230 pathways achieve the warming goal — although only 112 may be realistic.</p><br>
+            <h3>What can be done?</h3><br>
+            <p>Not all hope is lost. Tackling global warming is an enormous feat, but there are many people, organizations and activists making bold strides. We’re tracking their stories in our Climate Solutions section. Ultimately, it comes to down to you: your daily actions, habits, and lifestyle. If we all take actionable steps as the 8 billion individuals on Earth, it may not seem like you can have any impact, but in reality, the benefits are enormous.</p><br>
+        </div>
+    </div>
+        <script>
+            function displayTime(){
+            var d = new Date();
+            var date = d.toDateString();
+            var hour = d.getHours(); // 0-23
+            var min = d.getMinutes(); // 0-59
+            var sec = d.getSeconds(); // 0-59
+            var amOrPm = "AM";
+            if(hour >= 12)
+            {
+                amOrPm = "PM";
+            }
+            if(hour > 12)
+            {
+                hour = hour - 12;
+            }
+            if(hour < 10)
+                hour = "0" + hour;
+            if(min < 10)
+                min = "0" + min;
+            if(sec < 10)
+                sec = "0" + sec;
+            document.getElementById("time").innerHTML = hour + ":" + min + ":" + sec + " " + amOrPm;
+            document.getElementById("date").innerHTML = date
+            }
+            setInterval(displayTime, 1000);   
+        </script>
+    <div class="section-divider">
+        <div class="divider-line"></div>
+        <div class="divider-text"> ⇊ Quiz ⇊ </div>
+        <div class="divider-line"></div>
+    </div>
+    <div style="margin-top: 40px; margin-left: 80px;">
+        <ul class="quiz">
+            <h1>Quiz - Connections Between Goal 7 & Goal 13</h1>
+            <li>
+                <h4>1. How does Sustainable Development Goal 7 (Affordable and Clean Energy) contribute to Sustainable Development Goal 13 (Climate Action)?</h4>
+                <ul class="choices">
+                    <li>
+                        <label>
+                            <input type="radio" name="question0" value="A"/><span>By promoting renewable energy sources</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="question0" value="B"/><span>By reducing greenhouse gas emissions</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="question0" value="C"/><span>By improving energy efficiency</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="question0" value="D"/><span>All of the above</span>
+                        </label>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <h4>2. Which of the following energy sources is considered a renewable energy source?</h4>
+                <ul class="choices">
+                    <li>
+                        <label>
+                            <input type="radio" name="question1" value="A"/><span>Coal</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="question1" value="B"/><span>Natural gas</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="question1" value="C"/><span>Solar power</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="question1" value="D"/><span>Oil</span>
+                        </label>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <h4>3. How can the adoption of clean energy technologies contribute to climate change mitigation?</h4>
+                <ul class="choices">
+                    <li>
+                        <label>
+                            <input type="radio" name="question2" value="A"/><span>By reducing reliance on fossil fuels</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="question2" value="B"/><span>By promoting the use of electric vehicles</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="question2" value="C"/><span>By improving energy efficiency in buildings</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="question2" value="D"/><span>All of the above</span>
+                        </label>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <h4>4. What is the primary focus of Sustainable Development Goal 13 (Climate Action)?</h4>
+                <ul class="choices">
+                    <li>
+                        <label>
+                            <input type="radio" name="question3" value="A"/><span>Ensuring access to affordable and clean energy</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="question3" value="B"/><span>Promoting sustainable industrialization</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="question3" value="C"/><span>Taking urgent action to combat climate change</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="question3" value="D"/><span>Reducing inequality within and among countries</span>
+                        </label>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <h4>5. How can individuals contribute to achieving Goals 7 and 13?</h4>
+                <ul class="choices">
+                    <li>
+                        <label>
+                            <input type="radio" name="question4" value="A"/><span>By reducing energy consumption at home</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="question4" value="B"/><span>By supporting renewable energy initiatives</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="question4" value="C"/><span>By advocating for climate-friendly policies</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="question4" value="D"/><span>All of the above</span>
+                        </label>
+                    </li>
+                </ul>
+            </li>
+        <div class="results">
+            <button class="view-results" onclick="returnScore()">View Results</button>
+            <span id="myresults" class="my-results">Score: TBD</span>
+            <button class="reset-quiz" onclick="resetQuiz()">Reset</button>
+        </div>
+        <div id="answerjustifications">
+            <h1>Answers</h1>
+            <h3>1. How does Sustainable Development Goal 7 (Affordable and Clean Energy) contribute to Sustainable Development Goal 13 (Climate Action)?</h3>
+            <p><strong>All of the above: </strong>7 aims to provide affordable, reliable, sustainable, and modern energy for all. By promoting renewable energy sources, reducing greenhouse gas emissions, and improving energy efficiency, Goal 7 directly supports the objectives of Goal 13 to take urgent action to combat climate change and its impacts.</p>
+            <h3>2. Which of the following energy sources is considered a renewable energy source?</h3>
+            <p><strong>Solar power: </strong>Solar power is a renewable energy source that harnesses energy from the sun. It is considered environmentally friendly as it does not produce harmful emissions and is replenished naturally.</p>
+            <h3>3. How can the adoption of clean energy technologies contribute to climate change mitigation?</h3>
+            <p><strong>All of the above: </strong>The adoption of clean energy technologies, such as renewable energy sources, can help reduce reliance on fossil fuels, which are a significant contributor to greenhouse gas emissions. Additionally, promoting the use of electric vehicles and improving energy efficiency in buildings can further mitigate climate change by reducing emissions.</p>
+            <h3>4. What is the primary focus of Sustainable Development Goal 13 (Climate Action)?</h3>
+            <p><strong>Taking urgent action to combat climate change: </strong>Goal 13 specifically addresses the need to take immediate action to combat climate change and its impacts. It emphasizes the importance of raising awareness, implementing mitigation and adaptation strategies, and mobilizing resources to tackle climate-related challenges.</p>
+            <h3>5. How can individuals contribute to achieving Goals 7 and 13?</h3>
+            <p><strong>All of the above: </strong>Individuals can play a crucial role in achieving Goals 7 and 13 by adopting energy-saving practices, supporting renewable energy initiatives (such as installing solar panels or using green energy providers), and actively advocating for climate-friendly policies at local, national, and international levels.</p>
+        </div>
+    </div>
+    <script>
+        var answer = document.getElementById("answerjustifications")
+        answer.style.display = "none";
+        var answers = ["D", "C", "D", "C", "D"],
+            tot = answers.length;
+        function getCheckedValue(radioName) {
+            var radios = document.getElementsByName(radioName);
+            for (var y = 0; y < radios.length; y++)
+                if (radios[y].checked) return radios[y].value;
+        }
+        function getScore() {
+            var score = 0;
+            for (var i = 0; i < tot; i++)
+                if (getCheckedValue("question" + i) === answers[i]) score += 1;
+            return score;
+        }
+        function returnScore() {
+            document.getElementById("myresults").innerHTML =
+                "Score: " + getScore() + "/" + tot;
+            answer.style.display = "block";
+        }
+        function resetQuiz() {
+            document.getElementById("myresults").innerHTML = "Score: TBD"
+            answer.style.display = "none";
+            const selectedOptions = document.querySelectorAll("input[type=radio]:checked");
+            selectedOptions.forEach((option) => {
+                option.checked = false;
+            });
+        }
+    </script>
+    <div class="section-divider">
+        <div class="divider-line"></div>
+        <div class="divider-text"> ⇊ Actionable Steps ⇊  </div>
+        <div class="divider-line"></div>
+    </div>
+    <div class="actionableSteps">
+        <h1>So, what can I do to help?</h1>
+        <h3 style="margin-bottom: 40px;">Here are 3 actionable steps you can incorporate into your daily lives immediately!</h3>
+        <div class="inlinechild" style="max-width: 33%; vertical-align: top; text-align: left; padding: 20px;">
+            <u><h3>1. Reduce Single-Use Plastics: </h3></u>
+            <p><strong>Minimize the use of single-use plastics such as plastic bags, water bottles, and straws in daily routines.</strong> <br><br>Single-use plastics contribute to pollution and harm ecosystems. By opting for reusable alternatives like cloth bags, refillable water bottles, and stainless steel straws, individuals can significantly reduce plastic waste and promote sustainable living.
+            </p>
+            <img src="plastics.png" alt="Plastics" style="max-width: 75%; margin-left: 20px; margin-top: 40px;">
+        </div>
+        <div class="inlinechild" style="max-width: 33%; vertical-align: top; text-align: left; padding: 20px;">
+            <u><h3>2. Conserve Energy at Home:</h3></u>
+            <p><strong>Make a conscious effort to reduce energy consumption at home and in daily activities.</strong> <br><br>Conserving energy reduces greenhouse gas emissions and promotes energy efficiency. Simple actions like adjusting thermostat settings, using natural light, and unplugging electronics when not in use can make a significant impact on reducing carbon footprint.
+            </p>
+            <img src="conserveenergy.jpeg" alt="Energy" style="max-width: 75%; margin-left: 20px; margin-top: 40px;">
+        </div>
+        <div class="inlinechild" style="max-width: 33%; vertical-align: top; text-align: left; padding: 20px;">
+            <u><h3>3. Commuting Smarter: </h3></u>
+            <p><strong>Use more public transit instead of driving and actively participate in carpooling or ridesharing initiatives. <br><br></strong> By sharing rides with others who have similar routes or destinations, individuals can reduce the number of cars on the road and promote more efficient transportation options.
+            </p>  
+            <img src="publictransport.avif" alt="PublicTransport" style="max-width: 100%; margin-left: 0px; margin-top: 40px;">       
+        </div> 
+    </div>
+    <div class="section-divider">
+        <div class="divider-line"></div>
+        <div class="divider-text"> ⇊ Donate! ⇊  </div>
+        <div class="divider-line"></div>
+    </div>
+    <div class="donate">
+        <h1>You can help by donating too.</h1>
+        <h3 style="margin-bottom: 40px;">Here are 3 high-impact, cost-effective, evidence-based organizations!</h3>
+        <div class="inlinechild" style="max-width: 33%; vertical-align: top; text-align: left; padding: 20px;">
+            <u><h3>1. Clean Air Task Force</h3></u>
+            <h4>What is this?</h4>
+            <p style="margin-bottom: 20px">The Clean Air Task Force is a US-based non-governmental organization that has been working to reduce air pollution since its founding in 1996. It led a successful campaign to reduce the pollution caused by coal-fired power plants in the US, helped limit the US power sector’s CO2 emissions, and helped establish regulations of diesel, shipping, and methane emissions. CATF  advocates for zero-carbon technologies like advanced nuclear power and super-hot rock geothermal energy.
+            </p>
+            <a href="https://collaborative.evergreenaction.com/policy-hub/plan" target="_blank"><button type="button">Visit Website</button></a>
+            <img src="catf.png" alt="CATF" style="margin-top: 30px">
+            <h4>Why donate?</h4>
+            <p style="margin-bottom: 20px">In addition to its seriously impressive record of success and the high quality of its research, CATF does well on the neglectedness criterion: It often concentrates on targeting emissions sources that are neglected by other environmental organizations, and on scaling up deployment of technologies that are crucial for decarbonization, yet passed over by NGOs and governments. For example, it was one of the first major environmental groups to publicly campaign against overlooked superpollutants like methane.
+            </p>
+            <a href="https://secure.actblue.com/donate/evergreencollab?refcode=givinggreen" target="_blank"><button type="button">Consider Donating</button></a>
+        </div>
+        <div class="inlinechild" style="max-width: 33%; vertical-align: top; text-align: left; padding: 20px;">
+            <u><h3>2. Carbon180</h3></u>
+            <h4>What is this?</h4>
+            <p style="margin-bottom: 20px">This environmental nonprofit has a simple but radical goal: accelerating the development of carbon removal technologies that would take carbon dioxide out of the atmosphere and lock it away for hundreds of years or more. It works toward that goal of carbon removal (or “negative emissions”) through policy advocacy on Capitol Hill. The approach has reaped dividends with the passage of legislation that included billions in research and development for carbon removal.
+            </p>
+            <a href="https://carbon180.org/" target="_blank"><button type="button">Visit Website</button></a>
+            <img src="carbon1801.jpeg" alt="carbon1801" style="margin-top: 55px; margin-bottom: 35px; max-width: 350px;">
+            <h4>Why donate?</h4>
+            <p style="margin-bottom: 20px">Scientists agree that we’ll need some deployment of carbon-removal technologies to keep the planet habitable. Carbon removal generally has been underfunded, in part because the tech is pretty new, though it’s been catching up fast. Carbon180 can play an important role by investing in entrepreneurs, by boosting public awareness of carbon removal as necessary tech, and especially by advocating for more federal and state support. It makes sense for impact-minded donors to focus on a policy advocacy group like Carbon180.
+            </p>
+            <a href="https://carbon180.org/donate" target="_blank"><button type="button">Consider Donating</button></a>
+        </div>
+        <div class="inlinechild" style="max-width: 33%; vertical-align: top; text-align: left; padding: 20px;">
+            <u><h3>3. Evergreen Collaborative</h3></u>
+            <h4>What is this?</h4>
+            <p style="margin-bottom: 55px">The Evergreen Collaborative is a US policy advocacy group that includes some of the most prominent scientists and policymakers working for better climate policy and environmental justice. They leverage their experience and connections to push for key legislation — most notably, they successfully advocated for many pieces of the IRA, which includes $369 billion in climate provisions.
+            </p>  
+            <a href="https://www.catf.us/" target="_blank"><button type="button">Visit Website</button></a>
+            <img src="evergreen1.webp" alt="evergreen1" style="margin-top: 45px; margin-bottom: 10px; max-width: 350px;">
+            <h4>Why donate?</h4>
+            <p style="margin-bottom: 40px">Despite being a youngish organization, the Evergreen Collaborative has punched well above its weight. Now, it wants to focus on making sure the IRA gets implemented well by corporations, states, and the Biden administration. Giving Green recommends Evergreen, writing, “We think Evergreen’s nimble makeup, connections to governors’ offices, and targeted focus on specific states could result in big impacts in the years ahead.”
+            </p>
+            <a href="https://www.catf.us/donate/" target="_blank"><button type="button">Consider Donating</button></a>
+        </div> 
+        <img src="carbon1802.png" alt="carbon1802" style="margin-bottom: 35px; margin-left: 8%; max-width: 1500px;">
+    </div>
+    <hr class="bottom-line">
+    <footer>
+      <p>Copyright © 2023 Zeen Liu | <a class="link" href="https://www.ucc.on.ca/">Upper Canada College</a> - All Rights Reserved</p>
+    </footer>
+</body>
+</html>

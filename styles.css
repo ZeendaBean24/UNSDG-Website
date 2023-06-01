@@ -1,0 +1,676 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', "sans-serif" !important;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color:  rgba(96, 125, 139, 0.8);
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: rgba(152, 203, 179, 0.8);
+  color: white;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: rgba(255, 193, 7, 0.8);
+  color: rgba(121, 85, 72, 0.8);
+}
+
+a {
+  cursor: pointer;
+}
+
+.inlinechild {
+  display: inline-block;
+  /* border: 1px solid red; */
+  padding: 1rem 1rem;
+}
+
+header {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 1005;
+    height: 80px;
+}
+
+header h4 {
+    position: absolute;
+    left: 10%;
+    bottom: 1rem;
+    font-size: 1.6rem;
+}
+
+strong {
+  font-weight: 800;
+}
+
+figcaption {
+  margin-top: -30px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.introduction {
+  margin: 40px;
+  /* background-color: rgba(139, 195, 74, 0.5); */
+}
+
+.contact {
+  font-weight: 300;
+}
+
+ol {
+  margin-top: 10px;
+  margin-left: 60px;
+  margin-bottom: 10px;
+}
+
+.unsdgs17 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  max-width: 73%;
+}
+
+.unsdglogo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  max-width: 120%;
+}
+
+.factgenerator {
+  text-align: center;
+  padding: 20px;
+  margin-top: 80px;
+  margin-bottom: 60px;
+  max-width: 500px;
+  height: 268px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: aquamarine;
+  /* This can also be shorthanded by only using "border" or "border-left", etc.*/
+  border-left-style: double;
+  border-right-style: double;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-width: 5px;
+  border-color: black;
+  border-radius: 8px;
+}
+
+.generatorbutton {
+  margin: 20px;
+}
+
+.contactus {
+  margin-top: 0px;
+  margin-bottom: 40px;
+  margin-left: 100px;
+  margin-right: auto;
+  max-width: 1500px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Slideshow container */
+.imagecarousel {
+  max-width: 750px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px
+}
+
+/* Hide the images by default */
+.image {
+  display: none;
+}
+
+/* Next and previous containers */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -2px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next" button to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption Text */
+.captiontext {
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  top: -40px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number Text */
+.numbertext {
+  color: darkblue;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: -35px;
+}
+
+/* Dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active1, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading Animation */
+.fade1 {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade1 {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* REMOVE THE UNDERLINING FROM THE HYPERLINK , also learn about animinations and transitions */
+
+.unwebsite {
+  color:lightskyblue
+}
+
+.unwebsite:visited {
+  color:lightskyblue
+}
+
+.unwebsite:hover {
+  color: blue ;
+}
+
+.unwebsite:active {
+  color: blue ;
+}
+
+.link {
+  color:lightskyblue
+}
+
+.link:visited {
+  color:lightskyblue
+}
+
+.link:hover {
+  color: blue ;
+}
+
+.link:active {
+  color: blue ;
+}
+
+/* Splash screen */
+
+.intro {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: radial-gradient(circle at 84% 82%, rgba(217, 217, 217,0.03) 0%, rgba(217, 217, 217,0.03) 21%,transparent 21%, transparent 100%),radial-gradient(circle at 75% 56%, rgba(3, 3, 3,0.03) 0%, rgba(3, 3, 3,0.03) 30%,transparent 30%, transparent 100%),radial-gradient(circle at 74% 53%, rgba(153, 153, 153,0.03) 0%, rgba(153, 153, 153,0.03) 95%,transparent 95%, transparent 100%),radial-gradient(circle at 86% 43%, rgba(209, 209, 209,0.03) 0%, rgba(209, 209, 209,0.03) 83%,transparent 83%, transparent 100%),radial-gradient(circle at 64% 88%, rgba(192, 192, 192,0.03) 0%, rgba(192, 192, 192,0.03) 2%,transparent 2%, transparent 100%),radial-gradient(circle at 73% 77%, rgba(205, 205, 205,0.03) 0%, rgba(205, 205, 205,0.03) 18%,transparent 18%, transparent 100%),radial-gradient(circle at 57% 51%, rgba(161, 161, 161,0.03) 0%, rgba(161, 161, 161,0.03) 64%,transparent 64%, transparent 100%),radial-gradient(circle at 40% 84%, rgba(115, 115, 115,0.03) 0%, rgba(115, 115, 115,0.03) 14%,transparent 14%, transparent 100%),linear-gradient(90deg, rgb(0,0,0),rgb(0,0,0));    transition: 1.5s;
+  }
+  
+  .welcome-header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+  }
+  
+  .letter {
+    position: relative;
+    line-height: 5rem;
+    display: inline-block;
+    bottom: -20px;
+    opacity: 0;
+    font-size: 5rem;
+  }
+  
+  .letter.active {
+    bottom: 0;
+    opacity: 1;
+    transition: ease-in-out 0.5s;
+  }
+  
+  .letter.fade {
+    bottom: 150px;
+    opacity: 0;
+    transition: ease-in-out 0.5s;
+  }
+  
+  #pic {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+    opacity: 0;
+  }
+  
+  #pic.active {
+    opacity: 1;
+    transition: 0.5s;
+  }
+
+  #logoText {
+    position: absolute;
+    color:aliceblue;
+    text-align: center;
+    inline-size: 2000px;
+    font-size: 4rem;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+    opacity: 0;
+  }
+  
+  #logoText.active {
+    opacity: 1;
+    transition: 0.5s;
+  }
+  
+  @media screen and (max-width: 500px) {
+    .letter {
+      font-size: 1.4rem;
+    }
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .letter {
+      font-size: 2rem;
+    }
+  }
+
+  .section-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    /* background-color: antiquewhite; */
+  }
+  
+  .divider-line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #ccc;
+  }
+  
+  .divider-text {
+    margin: 0 10px;
+    color: #777;
+    font-weight: bold;
+  }
+
+/* THE MAINCONTAINER HOLDS EVERYTHING */
+.maincontainer{
+  position:relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 500px;
+  height: 640px;
+  background: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+/* THE CARD HOLDS THE FRONT AND BACK FACES */
+#thecard{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+}
+
+/* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT
+.thecard:hover{
+  transform: rotateY(180deg);
+} */
+
+/* THIS USED TO BE THE PSUEDO CLASS CONTROLS THAT FLIP ON MOUSEOVER AND MOUSEOUT IN CSS */
+/* BUT NOW THIS CLASS IS BEING CALLED IN JAVASCRIPT WHEN THE CARD IS CLICKED */
+.flipper{
+  transform: rotateY(180deg);
+}
+
+/* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
+ .thefront{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  background: #ffc728;
+  color: #000;
+}
+
+/* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
+.theback{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  background: #fafafa;
+  color: #333;
+  text-align: center;
+  transform: rotateY(180deg);
+}
+
+
+/*This block (starts here) is merely styling for the flip card, and is NOT an essential part of the flip code */
+.thefront h1, .theback h1{
+  padding: 30px;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+}
+
+.thefront h2, .theback h2{
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: left;
+}
+
+.thefront p, .theback p{
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 10px;
+  font-weight: normal;
+  text-align: left;
+}
+
+.thefront p{
+  font-size: 12px;
+}
+
+
+/*This block (ends here) is merely styling for the flip card, and is NOT an essential part of the flip code */
+
+.introduction13 {
+  margin-top: 150px;
+  text-align: center;
+}
+
+/* Countdown Clock */
+
+.smalltext {
+  padding-top: 5px;
+  font-size: 26px;
+}
+#clockdiv{
+    font-family: sans-serif;
+    color: #fff;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+}
+#clockdiv > div{
+    padding: 10px;
+    border-radius: 3px;
+    background: #00BF96;
+    display: inline-block;
+}
+#clockdiv div > span{
+    padding: 15px;
+    border-radius: 3px;
+    background: #00816A;
+    display: inline-block;
+}
+
+/* Digital Clock */
+.clock{
+  position: relative;
+  margin-top: 40px;
+}
+
+#time{
+  text-align: center;
+  font-size: 72px;
+  background-color: #333333;
+  color: #fff;
+  min-width: 380px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-top: 60px;
+  border-radius: 10px;
+  margin: 0 auto;
+  position: absolute;
+  margin-top: 100px;
+  left: 28%;
+  transform: translate(-50%, -50%);
+}
+
+#date{
+  text-align: center;
+  font-size:26px;
+  color: #fff;
+  min-width: 380px;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 0 auto;
+  position: absolute;
+  margin-top: 55px;
+  left: 28%;
+  transform: translate(-50%, -50%);
+}
+
+.quiz,
+.choices {
+    list-style-type: none;
+    padding: 0;
+}
+.choices li {
+    margin-bottom: 5px;
+}
+.choices label {
+    display: flex;
+    align-items: center;
+}
+.choices label,
+input[type="radio"] {
+    cursor: pointer;
+}
+input[type="radio"] {
+    margin-right: 8px;
+}
+.view-results {
+    padding: 1rem;
+    cursor: pointer;
+    font-size: inherit;
+    color: white;
+    background: teal;
+    border-radius: 8px;
+    margin-right: 5px;
+}
+.reset-quiz {
+  padding: 1rem;
+  cursor: pointer;
+  font-size: inherit;
+  color: white;
+  background: teal;
+  border-radius: 8px;
+  margin-right: 5px;
+}
+
+.results {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.my-results {
+    padding: 1rem;
+    border: 1px solid goldenrod;
+}
+
+.quiz h4, .quiz h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.quiz h1 {
+  margin-bottom: 30px;
+}
+
+.quiz {
+  margin-bottom: 40px;
+}
+
+
+.actionableSteps, .donate {
+  margin-left: 40px;
+  margin-right: 40px;
+  padding: 40px;
+}
+
+.actionableSteps h3, .donate h3{
+  margin-bottom: 20px;
+}
+
+.donate h4{
+  margin-top: 30px;
+}
+
+.donate button {
+  appearance: none;
+  background-color: #2ea44f;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.donate button:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+.donate button:hover {
+  background-color: #2c974b;
+}
+
+.donate button:focus {
+  box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+  outline: none;
+}
+
+.donate button:disabled {
+  background-color: #94d3a2;
+  border-color: rgba(27, 31, 35, .1);
+  color: rgba(255, 255, 255, .8);
+  cursor: default;
+}
+
+.donate button:active {
+  background-color: #298e46;
+  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}
+
+.donate p {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+hr {
+  height: 2px;
+  background-color: brown;
+  border-color: brown;
+}
+
+footer {
+  font-size: 14px;
+  padding: 8px;
+  margin-left: 30%;
+}

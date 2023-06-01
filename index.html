@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<!-- todo: add section dividers-->
+<!-- todo: formatting - hover transform, add different colour palettes, backgrounds, make image carousel photos the same size -->
+<!-- why does margin auto not work sometimes and sometimes it does??? -->
+<!-- make it responsive [hard] -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;700&display=swap" rel="stylesheet">
+        <title>Home Page</title>
+    </head>
+<!-- 
+HOW TO PLACE THIS BACKGROUND GRADIENT ONLY WHEN THE IMAGE APPEARS (THEY ARE THE SAME CLASS) background-image: radial-gradient(circle at center center, transparent 0%,rgb(0,0,0) 85%),linear-gradient(78deg, rgba(192, 192, 192,0.05) 0%, rgba(192, 192, 192,0.05) 50%,rgba(60, 60, 60,0.05) 50%, rgba(60, 60, 60,0.05) 100%),linear-gradient(227deg, rgba(97, 97, 97,0.05) 0%, rgba(97, 97, 97,0.05) 50%,rgba(52, 52, 52,0.05) 50%, rgba(52, 52, 52,0.05) 100%),linear-gradient(240deg, rgba(98, 98, 98,0.05) 0%, rgba(98, 98, 98,0.05) 50%,rgba(249, 249, 249,0.05) 50%, rgba(249, 249, 249,0.05) 100%),linear-gradient(187deg, rgba(1, 1, 1,0.05) 0%, rgba(1, 1, 1,0.05) 50%,rgba(202, 202, 202,0.05) 50%, rgba(202, 202, 202,0.05) 100%),linear-gradient(101deg, rgba(61, 61, 61,0.05) 0%, rgba(61, 61, 61,0.05) 50%,rgba(254, 254, 254,0.05) 50%, rgba(254, 254, 254,0.05) 100%),linear-gradient(176deg, rgba(237, 237, 237,0.05) 0%, rgba(237, 237, 237,0.05) 50%,rgba(147, 147, 147,0.05) 50%, rgba(147, 147, 147,0.05) 100%),linear-gradient(304deg, rgba(183, 183, 183,0.05) 0%, rgba(183, 183, 183,0.05) 50%,rgba(57, 57, 57,0.05) 50%, rgba(57, 57, 57,0.05) 100%), radial-gradient(circle at center center, hsl(351,4%,12%),hsl(351,4%,12%));
+or add an image background
+Also learn to use SVG files
+EMBED MULTIPLE FONTS
+-->    
+    <body>
+        <div class="intro">
+            <h1 class="welcome-header">
+                <span class="letter" style="color:rgb(209, 114, 114);"> U </span><span class="letter" style="color:rgba(209, 114, 114, 0.5);"> nited </span><br><span style="margin:1.5rem;">      </span><span class="letter" style="color:rgb(215, 185, 78);">  N </span><span class="letter" style="color:rgba(215, 185, 78, 0.5);">  ations </span><br><span style="margin:3rem;">             </span><span class= "letter" style="color:rgb(110, 220, 110);"> S </span><span class= "letter" style="color:rgba(110, 220, 110, 0.5);"> ustainable </span><br><span style="margin:4.5rem;">               </span><span class="letter" style="color:lightblue;"> D </span><span class="letter" style="color:rgba(173, 216, 230, 0.5);"> evelopment </span><br><span style="margin:5.5rem;">                   </span><span class="letter" style="color:rgb(254, 134, 90);">G</span><span class="letter" style="color:rgba(254, 134, 90, 0.5);">oals</span> <br><span></span>
+                    <h1 id="logoText">
+                        <span style="color:rgba(252,183,16,0.75);">7.</span><span> </span><span style="color:rgb(252,183,16);">Clean Energy</span><span> </span><span style="color:white;">+</span><span> </span><span style="color:rgba(72,119,61,0.75);">13.</span><span> </span></span><span style="color:rgb(72,119,61);">Climate Action</span>
+                    </h1>
+            </h1>
+        </div>
+    <script>
+        let intro = document.querySelector('.intro');
+        let letter = document.querySelector('.welcome-header');
+        let letterSpan = document.querySelectorAll('.letter');
+        let splashLogo = document.getElementById('pic');
+        let splashText = document.getElementById('logoText');
+
+        window.addEventListener('DOMContentLoaded', ()=>{
+
+            setTimeout(()=>{
+
+                letterSpan.forEach((span, idx)=>{
+                    setTimeout(()=>{
+                        span.classList.add('active');
+                    }, (idx + 1) * 200)
+                });
+
+                setTimeout(()=>{
+                    splashLogo.classList.add('active');
+                    splashText.classList.add('active');
+                }, 1000)
+
+                setTimeout(()=>{
+                    intro.style.top = '-100vh';
+                    
+                },2500)
+            })
+        })
+    </script>
+        <main>
+            <div class="topnav">
+                <a class="active" href="index.html" style="margin-left:35.5%;">Home</a>
+                <a href="goal7.html">Goal 7</a>
+                <a href="goal13.html">Goal 13</a>
+                <a href="connections.html">Connections</a>
+            </div>
+            <div>
+                <figure>
+                    <img class="unsdgs17" src="17usdgs.png" alt="17unsdgs">
+                    <!-- <figcaption>Image of 17 UNSDGs</figcaption> -->
+                </figure>
+            </div>
+            <div class="section-divider">
+                <div class="divider-line"></div>
+                <div class="divider-text"> ⇊ Learn More ⇊ </div>
+                <div class="divider-line"></div>
+              </div>
+            <div class="introduction">
+                <div class='inlinechild'>
+                    <section>
+                        <h2>List of 17 United Nations Sustainable Development Goals:</h2>
+                        <!-- ADD A VIDEO TO THE RIGHT and background colours-->
+                        <ol>
+                            <li>No Poverty</li></a>
+                            <li>Zero Hunger</li>
+                            <li>Good Health and Well-being</li>
+                            <li>Quality Education</li>
+                            <li>Gender Equality</li>
+                            <li>Clean Water and Sanitation</li>
+                            <a class="unwebsite" href="https://sdgs.un.org/goals/goal7" target="_blank"><strong><li>Affordable and Clean Energy</li></strong></a>
+                            <li>Decent Work and Economic Growth</li>
+                            <li>Industry, Innovation and Infrastructure</li>
+                            <li>Reduced Inequality</li>
+                            <li>Sustainable Cities and Communities</li>
+                            <li>Responsible Consumption and Production</li>
+                            <a class="unwebsite" href="https://sdgs.un.org/goals/goal13" target="_blank"><strong><li>Climate Action</li></strong></a>
+                            <li>Life Below Water</li>
+                            <li>Life on Land</li>
+                            <li>Peace and Justice Strong Institutions</li>
+                            <li>Partnerships to achieve the Goal</li>
+                        </ol>
+                    </section>
+                </div>
+                <div class='inlinechild'>
+                    <section>
+                        <iframe width="520" height="315"
+                        src="https://www.youtube.com/embed/0XTBYMfZyrM" style="margin-left: 15%; margin-top: auto; margin-bottom: auto;">
+                        </iframe>
+                    </section>
+                </div>
+            </div>
+            <div class="section-divider">
+                <div class="divider-line"></div>
+                <div class="divider-text"> ⇊ UNSDG Statistics ⇊ </div>
+                <div class="divider-line"></div>
+            </div>
+            <div class="factgenerator">
+                <h1>UNSDG Generator</h1>
+                <button id="factGenerator" class="generatorbutton">Learn the UNSDGs!</button>
+                <!--todo: css the button-->
+                <h3 id="goalName">Click on the button to learn a statistic about 1 of the 17 UNSDGs!</h3><br>
+                <p id="goalInfo">This call-to-action will hopefully impact the way you view our planet.</p>
+            </div>
+            <script> // todo: remove duplicate back-to-back random number g
+                document.getElementById("factGenerator").onclick = function() {
+                    let g = Math.floor((Math.random() * 17) + 1)
+                    // console.log(g)
+                    const element = document.getElementById("goalName");
+                    const info = document.getElementById("goalInfo");
+                    if (g == 1) {
+                        element.innerHTML = "Goal 1 - No Poverty";
+                        info.innerHTML = "More than 700 million people worldwide still live in extreme poverty, surviving on less than $1.90 per day.";
+                    }
+                    else if (g == 2) {
+                        element.innerHTML = "Goal 2 - Zero Hunger";
+                        info.innerHTML = "Approximately 690 million people suffer from chronic hunger, with malnutrition being a leading cause of death for children under the age of five.";
+                    }
+                    else if (g == 3) {
+                        element.innerHTML = "Goal 3 - Good Health and Well-Being";
+                        info.innerHTML = "Every year, around 6 million children under the age of five die from preventable diseases, highlighting the need for accessible healthcare services.";
+                    }
+                    else if (g == 4) {
+                        element.innerHTML = "Goal 4 - Quality Education";
+                        info.innerHTML = "About 260 million children and youth are out of school, denying them the opportunity to acquire the knowledge and skills necessary for a better future.";
+                    }
+                    else if (g == 5) {
+                        element.innerHTML = "Goal 5 - Gender Equality";
+                        info.innerHTML = "Women and girls continue to face discrimination and violence worldwide, with an estimated 1 in 3 women experiencing physical or sexual abuse in their lifetime.";
+                    }
+                    else if (g == 6) {
+                        element.innerHTML = "Goal 6 - Clean Water and Sanitation";
+                        info.innerHTML = "Over 2 billion people lack access to safe drinking water, and around 4.2 billion people lack access to proper sanitation facilities.";
+                    }
+                    else if (g == 7) {
+                        element.innerHTML = "Goal 7 - Affordable and Clean Energy";
+                        info.innerHTML = "Around 789 million people still lack access to electricity, particularly in rural areas of developing countries.";
+                    }
+                    else if (g == 8) {
+                        element.innerHTML = "Goal 8 - Decent Work and Economic Growth";
+                        info.innerHTML = "An estimated 203 million people are unemployed, with the majority being youth. Additionally, many workers worldwide still face precarious employment conditions and low wages.";
+                    }
+                    else if (g == 9) {
+                        element.innerHTML = "Goal 9 - Industry, Innovation, and Infrastructure";
+                        info.innerHTML = "Only 55% of the global population has access to the internet, highlighting the digital divide that exists between countries and communities.";
+                    }
+                    else if (g == 10) {
+                        element.innerHTML = "Goal 10 - Reduced Inequalities";
+                        info.innerHTML = "Income inequality continues to rise in many parts of the world, with the wealthiest 1% owning more than 50% of the world's wealth.";
+                    }
+                    else if (g == 11) {
+                        element.innerHTML = "Goal 11 - Sustainable Cities and Communities";
+                        info.innerHTML = "More than half of the global population lives in cities, leading to various challenges such as inadequate housing, slum areas, and insufficient access to basic services.";
+                    }
+                    else if (g == 12) {
+                        element.innerHTML = "Goal 12 - Responsible Consumption and Production";
+                        info.innerHTML = "Roughly one-third of all food produced for human consumption goes to waste, while natural resource depletion and pollution continue to rise.";
+                    }
+                    else if (g == 13) {
+                        element.innerHTML = "Goal 13 - Climate Action";
+                        info.innerHTML = "The concentration of carbon dioxide (CO2) in the Earth's atmosphere has reached unprecedented levels in the last 800,000 years, contributing to climate change and its adverse effects.";
+                    }
+                    else if (g == 14) {
+                        element.innerHTML = "Goal 14 - Life Below Water";
+                        info.innerHTML = "Over 30% of the world's fish stocks are overfished, and marine pollution, including plastic waste, poses a significant threat to marine ecosystems.";
+                    }
+                    else if (g == 15) {
+                        element.innerHTML = "Goal 15 - Life on Land";
+                        info.innerHTML = "Deforestation continues at an alarming rate, with an estimated 10 million hectares of forest lost annually, endangering biodiversity and exacerbating climate change.";
+                    }
+                    else if (g == 16) {
+                        element.innerHTML = "Goal 16 - Peace, Justice, and Strong Institutions";
+                        info.innerHTML = "Every year, an estimated 1.5 billion people worldwide live in countries affected by violence, conflict, or high levels of crime.";
+                    }
+                    else if (g == 17) {
+                        element.innerHTML = "Goal 17 - Partnerships for the Goals";
+                        info.innerHTML = "Global partnerships and collaboration are crucial for achieving the SDGs, as no single country or organization can address the complex challenges alone.";
+                    }
+                }
+            </script>
+            <div class="section-divider">
+                <div class="divider-line"></div>
+                <div class="divider-text"> ⇊ Image Carousel ⇊ </div>
+                <div class="divider-line"></div>
+            </div>
+            <div class="imagecarousel">
+                <!-- todo: crop using CSS images so that they are same aspect ratio + proportion in the carousel, so that the position on the screen is locked-->
+                <!-- Images with caption text-->
+                <div class="image fade1">
+                    <div class="numbertext">1 / 10</div>
+                    <img src="1poverty.avif" alt="1poverty" style="width:100%">
+                    <div class="captiontext"><em><h4 style="color:black">Poverty is still a very serious concern today.</h4></em></div>
+                </div>
+
+                <div class="image fade1">
+                    <div class="numbertext">2 / 10</div>
+                    <img src="2hunger.jpeg" alt="2hunger" style="width:100%">
+                    <div class="captiontext"><em><h4 style="color:black">Millions of people around the world are experiencing hunger.</h4></em></div>
+                </div>
+
+                <div class="image fade1">
+                    <div class="numbertext">3 / 10</div>
+                    <img src="3education.jpeg" alt="3education" style="width:100%">
+                    <div class="captiontext"><em><h4 style="color:black">Many students around the world struggle to find quality education. </h4></em></div>
+                </div>
+
+                <div class="image fade1">
+                    <div class="numbertext">4 / 10</div>
+                    <img src="4water.avif" alt="4water" style="width:100%">
+                    <div class="captiontext"><em><h4 style="color:black">Our oceans are polluted with litter and dirty, undrinkable water.</h4></em></div>
+                </div>
+
+                <div class="image fade1">
+                    <div class="numbertext">5 / 10</div>
+                    <img src="5power.jpeg" alt="5power" style="width:100%">
+                    <div class="captiontext"><em><h4 style="color:black">Many of the manufacturing processes still use on non-renewable energy.</h4></em></div>
+                </div>
+
+                <div class="image fade1">
+                    <div class="numbertext">6 / 10</div>
+                    <img src="6infrastructure.jpeg" alt="6infrastructure" style="width:100%">
+                    <div class="captiontext"><em><h4 style="color:black">Strategic infrastructure is the foundation to building a thriving city.</h4></em></div>
+                </div>
+
+                <div class="image fade1">
+                    <div class="numbertext">7 / 10</div>
+                    <img src="7inequalities.jpeg" alt="7inequalities" style="width:100%">
+                    <div class="captiontext"><em><h4 style="color:black">Despite all efforts, racial discrimination is prominent in our society.</h4></em></div>
+                </div>
+
+                <div class="image fade1">
+                    <div class="numbertext">8 / 10</div>
+                    <img src="8climate.jpeg" alt="8climate" style="width:100%">
+                    <div class="captiontext"><em><h4 style="color:black">Climate change could become irreversible in a few decades if we don't take action.</h4></em></div>
+                </div>
+
+                <div class="image fade1">
+                    <div class="numbertext">9 / 10</div>
+                    <img src="9lifebelowwater.jpeg" alt="9lifebelowwater" style="width:100%">
+                    <div class="captiontext"><em><h4 style="color:black">There are almost a million marine species who live in the waters of our planet.</h4></em></div>
+                </div>
+
+                <div class="image fade1">
+                    <div class="numbertext">10 / 10</div>
+                    <img src="10lifeonland.jpeg" alt="10lifeonland" style="width:100%">
+                    <div class="captiontext"><em><h4 style="color:black">Millions of species also live on land. Let's keep our biodiversity thriving!</h4></em></div>
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="next(-1)">&#10094;</a>
+                <a class="next" onclick="next(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <!-- Dots at the bottom-->
+            <div style="text-align:center; margin-bottom: 40px">
+                <span class="dot" onclick="currentimage(1)"></span>
+                <span class="dot" onclick="currentimage(2)"></span>
+                <span class="dot" onclick="currentimage(3)"></span>
+                <span class="dot" onclick="currentimage(4)"></span>
+                <span class="dot" onclick="currentimage(5)"></span>
+                <span class="dot" onclick="currentimage(6)"></span>
+                <span class="dot" onclick="currentimage(7)"></span>
+                <span class="dot" onclick="currentimage(8)"></span>
+                <span class="dot" onclick="currentimage(9)"></span>
+                <span class="dot" onclick="currentimage(10)"></span>
+            </div>
+
+            <script>
+                let slideIndex = 1;
+                showSlides(slideIndex);
+
+                // Next/previous controls
+                function next(n) {
+                    showSlides(slideIndex += n);
+                }
+
+                // Thumbnail image controls
+                function currentimage(n) {
+                    showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("image");
+                let dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active1", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active1";
+                }
+            </script>
+            <div class="section-divider">
+                <div class="divider-line"></div>
+                <div class="divider-text"> 〇 </div>
+                <div class="divider-line"></div>
+            </div>
+            <div class="contactus">
+                <div class="inlinechild" style="vertical-align: top;">
+                    <br><br><h1>Contact Us!</h1><br><br><br>
+                    <h2 class="contact"><strong>Website: </strong><a class="link" href="www.ucc.on.ca" target="_blank">www.ucc.on.ca</a></h2>
+                    <h2 class="contact"><strong>Email: </strong>zeen.liu@ucc.on.ca</h2>
+                    <h2 class="contact"><strong>Phone: </strong>(416) 488-1125</h2>
+                    <h2 class="contact"><strong>Address: </strong>200 Lonsdale Road, Toronto, ON, M4V 1W6</h2>
+                </div>
+                <div class="inlinechild">
+                    <img src="ucclogo.png" alt="ucclogo" style="width: 300px; margin-left: 100px;">
+                </div>
+            </div>
+        </main>
+        <hr class="bottom-line">
+        <footer>
+          <p>Copyright © 2023 Zeen Liu | <a class="link" href="https://www.ucc.on.ca/">Upper Canada College</a> - All Rights Reserved</p>
+        </footer>
+    </body>
+</html>
+
+
