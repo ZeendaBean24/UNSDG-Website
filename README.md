@@ -5,5 +5,5 @@
 
 > Make sure to download ALL FILES in the repository.
 > Go to ```Finder (Mac)``` or ```File Explorer (Windows)```
-> - Note that my website is NOT responsive.
-> - It was designed for a 13-inch M1 2020 MacBook Air.
+> - Note: my website is NOT responsive.
+> - It is designed for a 13-inch M1 2020 MacBook Air.
