@@ -9,3 +9,7 @@
 > Do not click on any other files.
 > - Note: My website is NOT responsive.
 > - It is designed for a 13-inch M1 2020 MacBook Air.
+
+### Libraries 
+> - Plotly.js
+> - That's it!
